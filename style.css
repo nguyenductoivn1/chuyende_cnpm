@@ -1,0 +1,126 @@
+body {
+    background-color:#F0F2F5;
+    display: flex;
+    padding: 156px 420px 279px 420px;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-form {
+    width: 600px;
+    height: 598px;
+    border-radius: 14px;
+    background: #FFF;
+    box-shadow: 0px 12px 40px 0px rgba(0, 0, 0, 0.16);
+}
+
+.login-form-header {
+    position: relative;
+    max-height: 58px;
+    border-bottom: 1px solid #E5E6EC;
+    padding: 16px 240px 18.26px 240px; 
+}
+
+.header-title {
+    color: #000;  
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px; 
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+#login-form .login-form-header .close-mark-icon {
+    position: absolute; 
+    top: 30%; 
+    right: 5%;
+}
+
+#login-body {
+    width: 440px;
+    height: 496px;
+    margin: 37px 80px 0 80px;
+}
+
+.text {
+    margin: 5px 0;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.input-field { 
+    width: 410px;
+    height: 22px;
+    padding: 16px 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f7f7f7;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-btn {
+    margin-top: 30px;
+    background-color: #00BF6F;
+    width: 440px;
+    height: 50px;
+    border-radius: 40px;
+    padding: 15px 0;
+    cursor: pointer;
+    color: #FFF;
+    text-align: center;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.login-btn:hover {
+    opacity: 0.8;
+}
+
+.otherway-title {
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.social-button {
+    width: 210px;
+    height: 45px;
+    margin-top: 5px;
+    padding: 13px 55px 13px 55px;
+    border-radius: 24px;
+    background: #e5e6ec;
+    color: #000;
+    line-height: normal;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.social-button:hover {
+    opacity: 0.8;
+}
+
+.footer {
+    margin-top: 40px;
+    padding: 35px 30px 24px 30px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+}

@@ -1,24 +1,45 @@
 <!doctype html>
 <html>
     <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/cc801c7ce6.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <title>Lớp CNPM</title>
     </head>
     <body>
         <div id="home">
             <div id="login-form">
-                <div><span>Đăng nhập </span><span>x</span></div>
+                <div class="login-form-header">
+                    <span class="header-title">Đăng nhập</span>
+                    <span class="close-mark-icon"><i class="fa-solid fa-xmark"></i></span>
+                </div>
+
                 <div id="login-body">
-                    <div>Tên đăng nhập</div>
-                    <input type="text">
-                    <div><span>Mật khẩu </span><span><a href="#">Quên mật khẩu</a></span></div>
-                    <input type="password">
-                    <div><button>Đăng nhập</button></div>
-                    <p>Hoặc đăng nhập bằng</p>
                     <div>
-                        <span><button>Facebook</button></span>
-                        <span><button>Google</button></span>
+                        <div class="text">Tên đăng nhập</div>
+                        <input type="text" class="input-field">
                     </div>
-                    <p>Bạn chưa có tài khoản? <a href="#">Đăng ký ngay</a></p>
+
+                    <div style="margin-top: 30px;">
+                        <div class="text flex" >
+                            <span>Mật khẩu </span>
+                            <span><a href="#" style="text-decoration: none; color: #2F80ED;">Quên mật khẩu?</a></span>
+                        </div>
+                        <input type="password" class="input-field"> 
+                        <i class="fa-solid fa-eye-slash" style="position: absolute; top: 410px; right: 550px;"></i>
+                    </div>
+
+                    <div>
+                        <button class="login-btn">Đăng nhập</button>
+                    </div>
+
+                    <p class="otherway-title">hoặc đăng nhập bằng</p>
+                    <div class="flex">
+                      <span><button class="social-button"><i class="fa-brands fa-facebook-f"></i> Facebook</button></span>
+                      <span><button class="social-button"><i class="fa-brands fa-google"></i> Google</button></span>
+                    </div>                  
+                    <p class="footer">Bạn chưa có tài khoản? <a href="#" style="text-decoration: none; color: #2F80ED;">Đăng ký ngay!</a></p>
                 </div>
             </div>
         </div>
