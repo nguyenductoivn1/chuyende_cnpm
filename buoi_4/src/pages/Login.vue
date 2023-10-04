@@ -1,4 +1,25 @@
-<script></script>
+<script>
+//import GetData from "../utils/api.js";
+export default {
+  name: "App",
+  data() {
+    return {
+      username: "",
+      password: "",
+    };
+  },
+  methods: {
+    async login() {
+      if (this.username && this.password) {
+        console.log(this.username, this.password);
+        alert("dang nhap thanh cong");
+        return;
+      }
+      alert("Vui long nhap tai khoan va mat khau");
+    },
+  },
+};
+</script>
 
 <template>
   <div id="home">
@@ -9,7 +30,7 @@
       </div>
       <div id="login-body">
         <div class="label-input">Tên đăng nhập</div>
-        <input type="text" />
+        <input type="text" v-model="username">
         <div
           style="
             margin-top: 40px;
@@ -23,8 +44,8 @@
             ><a href="google.com" id="forgot-password">Quên mật khẩu?</a></span
           >
         </div>
-        <input type="password" />
-        <div class="login-button">Đăng nhập</div>
+        <input type="password" v-model="password">
+        <div class="login-button" @click="login()">Đăng nhập</div>
         <p class="login-with">hoặc đăng nhập bằng</p>
         <div
           style="
